@@ -45,6 +45,7 @@ a {
 	text-decoration: none;
   color: black;
   font-family: 'Karla';
+  font-size: 16rem;
 }
 
 h1, h2, h3 {
@@ -68,22 +69,23 @@ p {
   font-size: 14rem;
 }
 
-header {
+/* GENERAL HEADER */
+
+.general-header {
 	width: 100%;
 	height: 140px;
 	display: grid;
 	grid-template-rows: 50px 1fr;
-	position: absolute;
 }
 
-header .header-icons {
+.general-header .header-icons {
 	background-color: var(--navy-blue-primary);
 	width: 100%;
 	height: 50px;
 	display: grid;
 }
 
-header .header-icons nav {
+.general-header .header-icons nav {
 	display: flex;
 	width: 150px;
 	height: auto;
@@ -93,7 +95,7 @@ header .header-icons nav {
 	margin-right: 50px;
 }
 
-header .header-icons nav a {
+.general-header .header-icons nav a {
 	color: white;
 	
 }
@@ -111,53 +113,58 @@ header .header-icons nav a {
 	width: 200px;
 }
 
-.about {
+/* GENERAL ABOUT ME */
+
+.general-about {
 	font-size: 18rem;
 	font-weight: 400;
-	color: var(--white-primary);
-	border-bottom: 2px solid white;
+	color: var(--black-primary);
+	border-bottom: 2px solid var(--black-primary);
 	padding-bottom: 5px;
 }
 
-.home {
-	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
-	height: 100%;
-	background-image: url('../assets/Images/Cover.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+/* HOME POSTS */
+
+.home-posts {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 4fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.home section {
-	display: grid;
-	grid-column: 2;
-	justify-items: center;
-	height: 350px;
-	margin-top: 35vh;
+.principal-post-container {
+  display: grid;
+  grid-column: 2;
+  background-color: var(--gray-light-primary);
 }
 
-.home .home__title {
-	color: white;
-	font-size: 35rem;
-	font-weight: bold;
-	text-align: center;
-	align-self: center;
+.container-post {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 50px;
+  padding: 20px;
+  column-gap: 40px;
 }
 
-.home .home__button {
-	display: grid;
-	background-color: var(--navy-blue-primary);
-	height: 50px;
-	text-align: center;
-	font-size: 18rem;
-	align-items: center;
-	font-weight: bold;
-	padding: 10px;
-	border-radius: 5px;
-	border-bottom: #434a54;
+.container-post h2, p, a {
+  margin-bottom: 10px;
 }
 
-.home .home__button:hover {
-	transform: scale(1.06);
+.container-post div img {
+  width: 100%;
+  height: auto;
+  margin-top:  10px;
+}
+
+.container-post .content-info-post {
+  display: inline-block;
+  align-self: center;
+}
+
+.read-more {
+  display: inline-block;
+  border: 2px solid var(--green-secundary);
+  font-weight: bold;
+  padding: 10px;
 }
