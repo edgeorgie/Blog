@@ -28,16 +28,7 @@
 
 html {
   font-size: 6.25%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	font-family: 'Karla';
+  font-family: 'Karla', Helvetica, sans-serif;
 }
 
 a {
@@ -92,7 +83,8 @@ p {
 	justify-content: space-between;
 	justify-self: end;
 	align-items: center;
-	margin-right: 50px;
+  margin-right: 50px;
+  margin-top: auto;
 }
 
 .general-header .header-icons nav a {
@@ -130,7 +122,7 @@ p {
   width: 100%;
   height: auto;
   grid-template-columns: 4fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .principal-post-container {
@@ -168,3 +160,16 @@ p {
   font-weight: bold;
   padding: 10px;
 }
+
+.all-posts-container {
+  display: grid;
+  grid-template-columns: 50px 4fr 50px;
+  grid-column: 2;
+  margin-top: 50px;
+}
+
+.all-posts-container__title, .posts-container {
+  grid-column: 2;
+}
+
+
