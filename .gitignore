@@ -1,1 +1,6 @@
-assets/
+assets/Fonts
+assets/license
+*.svg
+*.psd
+*.eps
+*.ai
